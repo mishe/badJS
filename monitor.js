@@ -12,7 +12,7 @@
         for(var i=0;i<imgLen;i++){
             (function(img){
                 if(img.complete){
-                    if(img.fileSize==0 || img.width==0 && img.height==0){
+                    if(img.naturalWidth==0 && img.naturalHeight==0){
                         addNewError({
                             msg:location.href+',图片加载失败',
                             target:img.src,
