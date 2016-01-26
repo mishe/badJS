@@ -5,7 +5,8 @@ module.exports = (function(navigator) {
   var userAgent = navigator.userAgent,
     temp,
     match = userAgent.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [],
-    match2 = userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|IEMobile/);
+    match2 = userAgent.match(/mobi|Android|BlackBerry|iPhone|iPad|iPod|IEMobile|touch|mini/i);
+
 
   if (/trident/i.test(match[1])) {
     temp = /\brv[ :]+(\d+)/g.exec(userAgent) || [];
